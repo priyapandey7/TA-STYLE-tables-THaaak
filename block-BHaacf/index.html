@@ -1,0 +1,527 @@
+<!-- - Create a layout according to the design shown below.
+
+![Table Assignment level 1](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/table/ex-1.png)
+
+- Attach the video provided in the background of hero section.
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Work on typography in detail.
+
+- Do not forget to checkout the preview video, before working on the assignment. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Studio - Assignment I</title>
+    <script
+      src="https://kit.fontawesome.com/379acff5c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- video autoplay -->
+    <header class="nav">
+      <div class="container flex">
+        <a class="brand-logo" href="#">
+          <h1>Traning <span>Studio</span></h1>
+        </a>
+        <nav>
+          <ul class="flex nav-menu">
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+            <li>
+              <a href="#program">About</a>
+            </li>
+            <li>
+              <a href="#">Classes</a>
+            </li>
+            <li>
+              <a href="#schedules">Schedual</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a class="btn" href="#">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero-video">
+        <video
+          class="video-bg"
+          autoplay="true"
+          muted
+          src="assets/gym-video.mp4"
+        ></video>
+        <div class="overlay text-center">
+          <h3 class="hero-subheading">Work harder,get stronger</h3>
+          <h2 class="hero-heading">
+            Easy with our <strong class="active">gym</strong>
+          </h2>
+          <a class="btn" href="#">Become a member</a>
+        </div>
+      </section>
+
+      <!-- program -->
+      <section id="program" class="padding">
+        <div class="container">
+          <header class="program">
+            <h2 class="heading third-heading">
+              CHOOSE <span class="active">PROGRAM</span>
+            </h2>
+            <img src="./assets/line-dec.png" alt="line" />
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              soluta ducimus aspernatur. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit.
+            </p>
+          </header>
+          <div class="type-course flex">
+            <div>
+              <article class="start flex">
+                <div class="col-1-1">
+                  <img
+                    class="img"
+                    src="./assets/features-first-icon.png"
+                    alt="feature icon"
+                  />
+                </div>
+                <div class="col-1-2">
+                  <h3 class="heading secondary-heading">Basic Fitness</h3>
+                  <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum, similique
+                  </p>
+                  <a href="#" class="active">DISCOVER MORE</a>
+                </div>
+              </article>
+              <article class="start flex">
+                <div class="col-1-1">
+                  <img
+                    class="img"
+                    src="./assets/features-first-icon.png"
+                    alt="feature icon"
+                  />
+                </div>
+                <div class="col-1-2">
+                  <h3 class="heading secondary-heading">
+                    Advanced Musical course
+                  </h3>
+                  <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur.
+                    <a href="#">Desital Marketing</a> or
+                    <a href="#">Corporate</a> similique
+                  </p>
+                  <a href="#" class="active">DISCOVER MORE</a>
+                </div>
+              </article>
+              <article class="start flex">
+                <div class="col-1-1">
+                  <img
+                    class="img"
+                    src="./assets/features-first-icon.png"
+                    alt="feature icon"
+                  />
+                </div>
+                <div class="col-1-2">
+                  <h3 class="heading secondary-heading">New Gym Training</h3>
+                  <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum, similique
+                  </p>
+                  <a href="#" class="active">DISCOVER MORE</a>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="start flex">
+                <div class="col-1-1">
+                  <img
+                    class="img"
+                    src="./assets/features-first-icon.png"
+                    alt="feature icon"
+                  />
+                </div>
+                <div class="col-1-2">
+                  <h3 class="heading secondary-heading">Yoga Training</h3>
+                  <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum, similique
+                  </p>
+                  <a href="#" class="active">DISCOVER MORE</a>
+                </div>
+              </article>
+              <article class="start flex">
+                <div class="col-1-1">
+                  <img
+                    class="img"
+                    src="./assets/features-first-icon.png"
+                    alt="feature icon"
+                  />
+                </div>
+                <div class="col-1-2">
+                  <h3 class="heading secondary-heading">
+                    Basic Musical Course
+                  </h3>
+                  <p class="text">
+                    Lorem, ipsum dolor <a href="#">Pixel Website</a> adipisicing
+                    elit. Nostrum, similique
+                  </p>
+                  <a href="#" class="active">DISCOVER MORE</a>
+                </div>
+              </article>
+              <article class="start flex">
+                <div class="col-1-1">
+                  <img
+                    class="img"
+                    src="./assets/features-first-icon.png"
+                    alt="feature icon"
+                  />
+                </div>
+                <div class="col-1-2">
+                  <h3 class="heading secondary-heading">
+                    Body Building Course
+                  </h3>
+                  <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum, similique
+                  </p>
+                  <a href="#" class="active">DISCOVER MORE</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- motivational -->
+      <section class="motivational padding">
+        <div class="container width-1">
+          <h2 class="logo-heading">
+            DON'T <span class="active"> THINK </span>,BEGIN
+            <span class="active"> TODAY! </span>
+          </h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            similique ipsum eius sequi, natus aliquid? Fuga quod tempore dolorem
+            architecto. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Rem, dolore.
+          </p>
+          <a href="#" class="btn primary-btn">BECOME A MEMBER</a>
+        </div>
+      </section>
+      <!-- our classes -->
+      <section class="padding classes-1">
+        <div class="container">
+          <header class="program">
+            <h2 class="heading third-heading">
+              OUR <span class="active">CLASSES</span>
+            </h2>
+            <img src="./assets/line-dec.png" alt="line" />
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              soluta ducimus aspernatur. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit.
+            </p>
+          </header>
+          <div class="classes flex flex-start">
+            <aside class="classes-aside">
+              <div class="aside-col flex">
+                <div class="col-2-1">
+                  <img
+                    class="img"
+                    src="./assets/tabs-first-icon.png"
+                    alt="tab first icon"
+                  />
+                </div>
+                <div class="col-2-2">
+                  <h3 class="heading secondary-heading active">
+                    First Training Class
+                  </h3>
+                </div>
+              </div>
+              <div class="aside-col flex">
+                <div class="col-2-1">
+                  <img
+                    class="img"
+                    src="./assets/tabs-first-icon.png"
+                    alt="tab first icon"
+                  />
+                </div>
+                <div class="col-2-2">
+                  <h3 class="heading secondary-heading">
+                    Second Training Class
+                  </h3>
+                </div>
+              </div>
+              <div class="aside-col flex">
+                <div class="col-2-1">
+                  <img
+                    class="img"
+                    src="./assets/tabs-first-icon.png"
+                    alt="tab first icon"
+                  />
+                </div>
+                <div class="col-2-2">
+                  <h3 class="heading secondary-heading">
+                    Third Training Class
+                  </h3>
+                </div>
+              </div>
+              <div class="aside-col flex">
+                <div class="col-2-1">
+                  <img
+                    class="img"
+                    src="./assets/tabs-first-icon.png"
+                    alt="tab first icon"
+                  />
+                </div>
+                <div class="col-2-2">
+                  <h3 class="heading secondary-heading">
+                    Forth Training Class
+                  </h3>
+                </div>
+              </div>
+              <div>
+                <a href="#" class="btn secondary-heading">View All Schedules</a>
+              </div>
+            </aside>
+            <article class="flex-60">
+              <img class="img" src="./assets/training-image-01.jpg" alt="" />
+              <h3>First Training Class</h3>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aperiam earum vel, tempore doloribus natus quas nulla distinctio
+                quia magni reprehenderit, numquam ipsum iste dolorum vitae
+                laborum quam, ex soluta. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Mollitia, quaerat provident doloribus
+                consequuntur
+              </p>
+              <a href="#" class="btn primary-btn">VIEW SCHEDULE</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- CLASSES SCHEDULE -->
+      <section class="schedule padding" id="schedules">
+        <div class="container">
+          <header class="program">
+            <h2 class="heading">
+              CLASSES <span class="active">SCHEDULE</span>
+            </h2>
+            <img src="./assets/line-dec.png" alt="line" />
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              soluta ducimus aspernatur. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit.
+            </p>
+          </header>
+          <table>
+            <caption class="capt">
+              <a href="#"> <strong class="active">Monday</strong> /</a>
+              <a href="#"> <span>Tuesday </span>/</a>
+              <a href="#"> <span>Wednesday</span> /</a>
+              <a href="#"> <span>Thursday</span> /</a>
+              <a href="#"> <span>Friday</span> /</a>
+            </caption>
+            <tbody>
+              <tr>
+                <td>Fitnes Class</td>
+                <td>10:00AM-11:30AM</td>
+                <td></td>
+                <td>Williem G.Stewart</td>
+              </tr>
+              <tr>
+                <td>Musical Training</td>
+                <td></td>
+                <td></td>
+                <td>Paul D.Newman</td>
+              </tr>
+              <tr>
+                <td>Body Building</td>
+                <td></td>
+                <td>2:00PM-3:30PM</td>
+                <td>Boy C.Harris</td>
+              </tr>
+              <tr>
+                <td>Yoga Training classes</td>
+                <td></td>
+                <td></td>
+                <td>Hector T.Daigle</td>
+              </tr>
+              <tr>
+                <td>Advanced Training</td>
+                <td></td>
+                <td></td>
+                <td>Bret D.Bowers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Trainer-section -->
+      <section class="padding trainer">
+        <div class="container">
+          <header class="program">
+            <h2 class="heading third-heading">
+              EXPERT <span class="active">TRAINERS</span>
+            </h2>
+            <img src="./assets/line-dec.png" alt="line" />
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              soluta ducimus aspernatur. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit.
+            </p>
+          </header>
+          <div class="flex padding">
+            <article class="flex-30 trainer-col">
+              <img src="assets/first-trainer.jpg" alt="first-trainer" />
+              <h5>Strength trainer</h5>
+              <h3>Bret D. Browser</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                quasi in voluptatibus est, recusandae magnam a eos odit ratione
+                placeat cumque rem voluptate.
+              </p>
+              <nav>
+                <ul class="flex-1">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+            <article class="flex-30 trainer-col">
+              <img src="assets/first-trainer.jpg" alt="2nd-trainer" />
+              <h5>Muscle trainer</h5>
+              <h3>Hector T.Daigl</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                quasi in voluptatibus est, recusandae magnam a eos odit ratione
+                placeat cumque rem voluptate.
+              </p>
+              <nav>
+                <ul class="flex-1">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+            <article class="flex-30 trainer-col">
+              <img src="assets/first-trainer.jpg" alt="3rd-trainer" />
+              <h5>power trainer</h5>
+              <h3>Paul D Newman</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                quasi in voluptatibus est, recusandae magnam a eos odit ratione
+                placeat cumque rem voluptate.
+              </p>
+              <nav>
+                <ul class="flex-1">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- contact-section -->
+      <section class="flex">
+        <div class="flex-50">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919515571368!2d76.35140991551165!3d32.20639932016669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1611241689801!5m2!1sen!2sin"
+            width="100%"
+            height="500"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+        <div class="contact-form flex flex-50">
+          <form action="">
+            <fieldset>
+              <div class="input flex">
+                <input
+                  class="form-control flex-48"
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  class="form-control flex-48"
+                  type="email"
+                  name="email"
+                  placeholder="Your Email*"
+                  required
+                />
+              </div>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                class="form-control"
+                required
+              />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                placeholder="Message"
+                class="form-control"
+                required
+              ></textarea>
+              <button class="btn primary-btn">Send massage</button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <small>
+        Copyright &copy; 2020 Training Studio- Designed by
+        <span class="active">TemplateMo</span></small
+      >
+    </main>
+  </body>
+</html>
